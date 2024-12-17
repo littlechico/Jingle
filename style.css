@@ -1,0 +1,77 @@
+* {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+  background-color: #dc3b33;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  color: white;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.texto {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #93c47dff;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gif1 {
+  display: flex;
+  align-items: center;
+  max-width: 248px;
+  height: auto;
+}
+
+.imagens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.imagens2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.gif2 {
+  display: flex;
+  align-items: center;
+  max-width: 160px;
+  height: auto;
+  margin-top: 32px;
+}
+
+.texto_bott {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 5%;
+}
