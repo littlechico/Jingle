@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTADOR PARA O JINGLE BELLS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="center-screen"></div>
+    <div class="texto">
+      <p>Quanto tempo falta para o nosso JINGLE BELLS?</p>
+    </div>
+
+    <div class="contador">
+      <p id="demo"></p>
+
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 20, 2024 17:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML =
+            days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
+    </div>
+    <div class="imagens">
+      <img
+        class="gif1"
+        src="https://i.pinimg.com/originals/26/80/9a/26809a8350754beb44dbb320fc86d76f.gif"
+        alt="alternatetext"
+      />
+
+      <img
+        class="gif1"
+        src="https://img1.picmix.com/output/pic/normal/9/5/7/1/10261759_fe1eb.gif"
+        alt="alternatetext"
+      />
+
+      <img
+        class="gif1"
+        src="https://img1.picmix.com/output/pic/normal/5/6/7/1/10261765_a2381.gif"
+        alt="alternatetext"
+      />
+    </div>
+
+    <div class="imagens2">
+      <img
+        class="gif2"
+        src="https://cdn.sanity.io/images/bl383u0v/production/b8bf3938336ab457e1045e90fe737ce0c59f1cde-1500x1000.jpg?rect=0,106,1500,788&w=1200&h=630&q=70&fit=crop&auto=format"
+        alt="alternatetext"
+      />
+    </div>
+
+    <div class="texto_bott">
+      <p>Made by: CHIQUINHO DESIGNER DA SILVA ZL</p>
+    </div>
+  </body>
+</html>
